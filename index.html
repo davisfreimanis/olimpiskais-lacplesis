@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta http-equiv="refresh" content="3; url=https://lacplesis.wixstudio.com/olimpiskaislacplesis" />
+  <meta http-equiv="refresh" content="0.1; url=https://lacplesis.wixstudio.com/olimpiskaislacplesis" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Redirecting...</title>
   <style>
@@ -12,14 +12,22 @@
       margin: 0;
       padding: 0;
       display: flex;
-      justify-content: center;   /* centers horizontally */
-      align-items: center;       /* centers vertically */
+      justify-content: center;   /* horizontal centering */
+      align-items: center;       /* vertical centering */
       background-color: #ffffff; /* optional background */
     }
+
     img {
-      max-width: 25%;
+      max-width: 100%;
       height: auto;
-      display: block;            /* removes any inline spacing */
+      display: block;
+      animation: rotate 3s linear infinite; /* rotation animation */
+    }
+
+    /* Rotation keyframes */
+    @keyframes rotate {
+      from { transform: rotate(0deg); }
+      to   { transform: rotate(360deg); }
     }
   </style>
 </head>
